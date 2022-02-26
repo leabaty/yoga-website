@@ -50,7 +50,7 @@ function Navbar() {
             <div className="navbar__menu__left">
               <li className="nav-item">
                 <Link
-                  to="/chambres"
+                  to="/a-propos"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
@@ -60,7 +60,7 @@ function Navbar() {
 
               <li className="nav-item">
                 <Link
-                  to="/table"
+                  to="/retraite"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
@@ -70,7 +70,7 @@ function Navbar() {
 
               <li className="nav-item">
                 <Link
-                  to="/acces"
+                  to="/cours"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
@@ -94,7 +94,7 @@ function Navbar() {
             <div className="navbar__menu__right">
               <li className="nav-item">
                 <Link
-                  to="/a-propos"
+                  to="/contact"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >

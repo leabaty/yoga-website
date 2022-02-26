@@ -139,7 +139,8 @@ table {
 }
 
 .app {
-  background-color: var (--secondary);
+  // background-color: var (--secondary);
+  background-color: #f9e4d4;
   font-family: "Jost", sans-serif;
 }
 
@@ -188,7 +189,9 @@ hr {
   margin: 30px auto;
 }
 
-.fade-in-section {
+// FADE IN ANIMATION 
+
+.fade-in-from-bottom-section {
   opacity: 0;
   transform: translateY(20vh);
   visibility: hidden;
@@ -196,11 +199,29 @@ hr {
     visibility 1200ms ease-out;
   will-change: opacity, transform, visibility;
 }
-.fade-in-section.is-visible {
+
+.fade-in-from-bottom-section.is-visible {
   opacity: 1;
   transform: none;
   visibility: visible;
 }
+
+.fade-in-from-top-section {
+  opacity: 0;
+  transform: translateY(-20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+
+.fade-in-from-top-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+
 
 .btn {
   margin: 15px auto;

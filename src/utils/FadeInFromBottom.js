@@ -2,7 +2,7 @@ import React from "react";
 
 // fade in function from https://codesandbox.io/s/beautiful-wiles-k23w5?from-embed=&file=/src/styles.css:59-378
 
-function FadeInSection(props) {
+function FadeInFromBottom(props) {
     const [isVisible, setVisible] = React.useState(false);
     const domRef = React.useRef();
     
@@ -12,9 +12,10 @@ function FadeInSection(props) {
       });
       observer.observe(domRef.current);
     }, []);
+
     return (
       <div
-        className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
+        className={`fade-in-from-bottom-section ${isVisible ? "is-visible" : ""}`}
         ref={domRef}
       >
         {props.children}
@@ -22,4 +23,4 @@ function FadeInSection(props) {
     );
   }
 
-  export default FadeInSection;
+  export default FadeInFromBottom;

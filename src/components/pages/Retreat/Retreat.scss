@@ -1,0 +1,20 @@
+.parallax-wrapper {
+    overflow-y: hidden;
+  }
+  
+  .imgparallax {
+    background-image: url("../../../assets/images/retreat-1.webp");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .retreat {
+    &__title {
+      font-size: 3rem;
+      color: var(--outlined);
+    }}

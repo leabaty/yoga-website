@@ -1,0 +1,42 @@
+.parallax-wrapper {
+    overflow-y: hidden;
+  }
+  
+  .parallax {
+    background-image: url("../../../assets/images/home-header.webp");
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+  }
+  
+  .parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+.home{
+    &__quote{
+        color: var(--outlined);
+        width: 60%;
+        margin: 0 auto;
+        font-size: 2.1rem;
+        font-weight: 350;
+        line-height: 3rem;     
+
+        &__author{
+          margin-top: 10px;
+          font-size: 1.4rem;
+          font-weight: 300;;
+        }
+    }
+
+    &__page {
+      padding: 80px 0 0 0;
+      max-width: 80%;
+      text-align: center;
+      margin: 0 auto;
+
+    }
+}

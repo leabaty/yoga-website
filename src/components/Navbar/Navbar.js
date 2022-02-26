@@ -18,22 +18,6 @@ function Navbar() {
   /* Quand l'utilisateur a cliqué sur un des liens, cela ferme le menu et présente à nouveau la navbar mobile*/
   const closeMobileMenu = () => setOpenMobileMenu(false);
 
-  /*A chaque fois que l'utilisateur redimensionne la fenête, on vérifie si 
- on est en dessous  de 960px. Si c'est le cas, on affiche le bouton mobile*/
-
-  // const toggleMenu = () => {
-  //   if (window.innerWidth <= 960) {
-  //     setMobileView(false);
-  //   } else {
-  //     setMobileView(true);
-  //   }
-  // };
-
-  // window.addEventListener("resize", toggleMenu);
-  // useEffect(() => {
-  //   toggleMenu();
-  // }, []);
-
   return (
     <>
       <nav className="navbar">

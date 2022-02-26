@@ -4,48 +4,48 @@ function PrivacyPolicy() {
   return (
     <>
       <div className="page">
-        <h1 className="heading heading--medium">
+        <h1 className="title">
           Politique de confidentialité
         </h1>
-        <hr className="heading-rule" />
+        <hr className="title-rule" />
 
         <article className="legal__article">
           <p className="text">
             Cette Politique de confidentialité s’applique au site :
-            www.lacouettebeneze.fr. Elle décrit nos procédures sur la collecte,
+            www.apsara-yoga.com. Elle décrit nos procédures sur la collecte,
             l’utilisation et la diffusion de vos données personnelles lorsque
             vous utilisez notre site internet. Pour cela, nous vous informons à
             propos de :
           </p>
 
           <ul>
-            <li>
-              La manière dont sont collectées et traitées les données à
+            <li className="legal__bullet">
+              - La manière dont sont collectées et traitées les données à
               caractère personnel. Doivent être considérées comme données
               personnelles toutes les données étant susceptibles d’identifier un
               utilisateur. Il s’agit notamment du prénom et du nom, de l’âge, de
               l’adresse postale, l’adresse mail, la localisation de
               l’utilisateur,
             </li>
-            <li>
-              Quels sont les droits des utilisateurs concernant ces données ;
+            <li className="legal__bullet">
+              - Quels sont les droits des utilisateurs concernant ces données ;
             </li>
-            <li>
-              Qui est responsable du traitement des données à caractère
+            <li className="legal__bullet">
+              - Qui est responsable du traitement des données à caractère
               personnel collectées et traitées ;
             </li>
-            <li>A qui ces données sont transmises ;</li>
-            <li>La politique du site en matière de fichiers « cookies »</li>
+            <li className="legal__bullet">- A qui ces données sont transmises ;</li>
+            <li className="legal__bullet">- La politique du site en matière de fichiers « cookies »</li>
           </ul>
 
           <p className="text">
             Nous utilisons vos données personnelles pour fournir et améliorer
-            nos services. En vous rendant sur www.lacouettebeneze.fr , vous
+            nos services. En vous rendant sur www.apsara-yoga.com , vous
             acceptez la collecte et l’utilisation des informations conformément
             à la présente Politique de confidentialité. Les données collectées
-            sont sauvegardées dans un fichier informatisé par La Couette Benèze.
+            sont sauvegardées dans un fichier informatisé par Apsara Yoga.
             Les renseignements rassemblés seront communiqués aux seuls
-            destinataires suivants : La Couette Benèze. Ces données feront
+            destinataires suivants : Apsara Yoga. Ces données feront
             l’objet de traitement.
           </p>
 
@@ -55,7 +55,7 @@ function PrivacyPolicy() {
             et exercer votre droit à la limitation du traitement. Vous pourrez
             exercer ces droits à tout moment. Pour cela, vous pouvez contacter
             la responsable du traitement de données par mail à :
-            lacouettebeneze@gmail.com
+            apsara-yoga@gmail.com
           </p>
 
           <p className="text">
@@ -72,7 +72,10 @@ function PrivacyPolicy() {
             et des Libertés ou CNIL, 3 Places de Fontenoy, 75007 Paris.
           </p>
 
-          <h1 className="heading heading--nano">
+          </article>
+
+          <article className="legal__article">
+          <h1 className="title title--nano">
             Collecte et utilisation de vos données personnelles
           </h1>
 
@@ -98,8 +101,10 @@ function PrivacyPolicy() {
             visitez notre service ou lorsque vous accédez au service par ou via
             un appareil mobile.
           </p>
+          </article>
 
-          <h1 className="heading heading--nano">
+          <article className="legal__article">
+          <h1 className="title title--nano">
             Technologies de suivi et cookies
           </h1>
 

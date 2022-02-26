@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./utils/ScrollToTop";
 
 import "./App.scss";
 
@@ -23,6 +24,7 @@ function App() {
   return (
     <div className="app">
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" exact element={<Home />}></Route>

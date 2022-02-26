@@ -15,9 +15,7 @@
   text-align: center;
 }
 
-
 .home {
-
   &__quote {
     color: var(--outlined);
     width: 60%;
@@ -38,5 +36,48 @@
     max-width: 80%;
     text-align: center;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .parallax {
+    height: 70vh;
+  }
+
+  .home {
+    &__quote {
+      font-size: 1.9rem;
+      line-height: 2.5rem;
+
+      &__author {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    &__quote {
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+
+      &__author {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .home {
+    &__quote {
+      font-size: 1.1rem;
+      line-height: 2rem;
+
+      &__author {
+        font-size: 0.8rem;
+      }
+    }
   }
 }

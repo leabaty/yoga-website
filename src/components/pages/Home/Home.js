@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import $ from 'jquery';
 
 import "./Home.scss";
 
 function Home() {
-  // JS ONLY PARALLAX
 
+  //Parallax Effect
   const throttle = (fn, wait) => {
     var time = Date.now();
 
@@ -36,7 +35,6 @@ function Home() {
 
   window.addEventListener("scroll", throttle(bgparallax, 14));
   window.addEventListener("scroll", throttle(txtparallax, 14));
-
 
 
   return (

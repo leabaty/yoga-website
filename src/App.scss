@@ -141,7 +141,6 @@ table {
 .app {
   background-color: var (--secondary);
   font-family: "Jost", sans-serif;
-
 }
 
 .page {
@@ -157,7 +156,7 @@ table {
   font-family: "Homemade Apple", cursive;
   font-weight: 600;
   color: var(--primary);
-  margin: 20px 0
+  margin: 20px 0;
 }
 
 .title--medium {
@@ -214,7 +213,7 @@ hr {
     color: var(--primary);
     box-shadow: 8px 8px 0 -1px var(--secondary), 8px 8px 0 0 var(--primary);
 
-    &:hover{
+    &:hover {
       background-color: var(--primary);
       border: var(--secondary) 1px solid;
       color: var(--secondary);
@@ -227,7 +226,7 @@ hr {
     color: var(--secondary);
     box-shadow: 8px 8px 0 -1px var(--primary), 8px 8px 0 0 var(--primary);
 
-    &:hover{
+    &:hover {
       background-color: var(--secondary);
       border: var(--primary) 1px solid;
       color: var(--primary);
@@ -268,6 +267,25 @@ hr {
   }
 }
 
+@media screen and (max-width: 1060px) {
+  .btn {
+    &--large {
+      padding: 8px 25px;
+      font-size: 1.1rem;
+    }
+
+    &--medium {
+      padding: 6px 20px;
+      font-size: 1rem;
+    }
+
+    &--small {
+      padding: 4px 18px;
+      font-size: 0.8rem;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .page {
     padding: 15px 0 0 0;
@@ -282,5 +300,14 @@ hr {
   .text {
     font-size: 1.1rem;
     margin: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .btn {
+    &--large {
+      padding: 6px 20px;
+      font-size: 1rem;
+    }
   }
 }

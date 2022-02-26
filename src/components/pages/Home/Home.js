@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import $ from 'jquery';
 
 import "./Home.scss";
 
 function Home() {
-  //PARALLAX EFFECT
+  // JS ONLY PARALLAX
+
   const throttle = (fn, wait) => {
     var time = Date.now();
 
@@ -16,7 +18,7 @@ function Home() {
     };
   };
 
-  const parallax = () => {
+  const bgparallax = () => {
     var scrolled = window.pageYOffset;
     var parallaxItem = document.querySelector(".parallax");
     // To adjust the speed, change the coords
@@ -24,14 +26,26 @@ function Home() {
     parallaxItem.style.transform = "translateY(" + coords + ")";
   };
 
-  window.addEventListener("scroll", throttle(parallax, 14));
+  const txtparallax = () => {
+    var scrolled = window.pageYOffset;
+    var parallaxItem = document.querySelector(".home__blockquote");
+    // To adjust the speed, change the coords
+    var coords = scrolled * -0.4 + "px";
+    parallaxItem.style.transform = "translateY(" + coords + ")";
+  };
+
+  window.addEventListener("scroll", throttle(bgparallax, 14));
+  window.addEventListener("scroll", throttle(txtparallax, 14));
+
+
 
   return (
     <>
-
       <header class="parallax-wrapper">
         <div class="parallax">
-          <div class="home__blockquote" /*mettre en z index 1 par rapport à sa div en parallax*/> 
+          <div
+            class="home__blockquote" /*mettre en z index 1 par rapport à sa div en parallax*/
+          >
             <blockquote className="home__quote">
               "Une citation/mantra de ton choix, qui représente ta pratique et
               ta vision du yoga, vitae facilisis velit consectetur vitae. Proin

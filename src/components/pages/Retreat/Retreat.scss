@@ -1,20 +1,156 @@
 .parallax-wrapper {
-    overflow-y: hidden;
+  overflow-y: hidden;
+}
+
+.imgparallax {
+  background-image: url("../../../assets/images/retreat-1.webp");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.retreat {
+  &__section {
+    margin: 5rem 0;
   }
-  
-  .imgparallax {
-    background-image: url("../../../assets/images/retreat-1.webp");
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+
+  &__title {
+    font-size: 3rem;
+    color: var(--outlined);
   }
-  
-  .retreat {
+
+  &__info {
+    background-color: var((--primary));
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 80%;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: var(--secondary);
+      text-align: center;
+
+      &__icon {
+        padding: 15px;
+        font-size: 1.6rem;
+      }
+
+      & a {
+        color: var(--secondary);
+      }
+    }
+  }
+
+  &__pricing {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 2rem;
+      width: 30%;
+
+      &-icon {
+        padding: 15px;
+        font-size: 1.6rem;
+      }
+
+      &-characteristic {
+        line-height: 2rem;
+      }
+    }
+  }
+
+  &__transport {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    &__card {
+      width: 25%;
+
+      &__title {
+        margin: 20px;
+      }
+
+      &__instruction {
+        margin-bottom: 15px;
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 1.8rem;
+      }
+
+      &__instruction::before {
+        content: "→";
+        color: var(--primary); /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1.4em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em;
+      }
+    }
+
+    &__map {
+      margin: 20px 0;
+    }
+
+    &__aside {
+      margin: 20px 0;
+    }
+  }
+
+  &__program {
+    width: 30%;
+    margin: 0 auto;
+    padding: 4rem;
+    color: var(--primary);
+    background-color: var(--secondarydarker);
+    box-shadow: 0.5px 0.5px 10px 1px rgba(0, 0, 0, 0.2);
+
     &__title {
-      font-size: 3rem;
-      color: var(--outlined);
-    }}
+      margin: 0 0 70px 0;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+      margin: 10px 0;
+      text-align: left;
+
+      &-time {
+        width: 40%;
+      }
+
+      &-characteristic {
+        width: 70%;
+        padding-left: 1.3rem;
+      }
+    }
+  }
+}

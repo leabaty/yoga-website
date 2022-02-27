@@ -1,6 +1,6 @@
 .article {
   &__container {
-    margin: 45px 30px;
+    margin:  0px 30px 45px 30px;
   }
 
   &__row {
@@ -33,19 +33,18 @@
 
   &__text {
     margin: 20px 35px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 2rem;
   }
 
   &__img-wrapper {
-    max-width: 550px;
     margin: auto;
   }
 }
 
 img {
   border: none;
-  max-width: 100%;
+  max-width: 90%;
 }
 
 @media screen and (max-width: 1250px) {
@@ -64,8 +63,8 @@ img {
 
     &__text {
       margin: 20px 35px;
-      font-size: 1.1rem;
-      line-height: 1.7rem;
+      font-size: 1rem;
+      line-height: 1.6rem;
     }
   
   }

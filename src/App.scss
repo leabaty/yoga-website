@@ -135,6 +135,8 @@ table {
 :root {
   --primary: #632626;
   --secondary: #f9e4d4;
+  --secondarydarker: #eccfb8;
+  --secondarylighter: #fff5ef;
   --outlined: #fff;
 }
 
@@ -142,6 +144,14 @@ table {
   // background-color: var (--secondary);
   background-color: #f9e4d4;
   font-family: "Jost", sans-serif;
+}
+
+p{
+  line-height: 1.8rem;
+}
+
+li{
+  line-height: 1.2rem;
 }
 
 .page {
@@ -153,7 +163,7 @@ table {
 }
 
 .title {
-  font-size: 1.6em;
+  font-size: 2rem;
   font-family: "Homemade Apple", cursive;
   font-weight: 600;
   color: var(--primary);
@@ -161,15 +171,15 @@ table {
 }
 
 .title--medium {
-  font-size: 1.6em;
+  font-size: 1.8rem;
 }
 
 .title--small {
-  font-size: 1.5em;
+  font-size: 1.4rem;
 }
 
 .title--nano {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .undertitle {
@@ -185,8 +195,9 @@ table {
 }
 
 hr {
-  width: 30%;
+  width: 40%;
   margin: 30px auto;
+  border: 1px dashed var(--primary);
 }
 
 // FADE IN ANIMATION 

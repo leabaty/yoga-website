@@ -58,16 +58,18 @@
 // COMPONENT RELATED STYLING
 
 .slide {
-  margin-top: 40px;
-  padding: 20px;
   background-color: var(--secondarylighter);
   border-radius: 10px;
   border: 2px solid var(--secondarydarker);
+  max-width: 95%;
+
+  
 
   &__title {
     color: var(--primary);
     line-height: 2rem;
     font-size: 1.2rem;
+    padding: 0 30px;
   }
 
   &__img {
@@ -92,6 +94,7 @@
   &__price {
     font-size: 1.8rem;
     color: var(--primary);
+    padding: 20px 0; 
   }
 }
 

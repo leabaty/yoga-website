@@ -110,7 +110,9 @@ function Retreat(data) {
         <hr />
 
         <section className="retreat__accomodation retreat__section">
-          <h2 className="title title--medium">Les formules</h2>
+          <h2 className="title title--medium retreat__undertitle">
+            Les formules
+          </h2>
           <RetreatAccomodation accomodation={data.data.accomodation} />
 
           <section className="retreat__section">
@@ -168,7 +170,9 @@ function Retreat(data) {
         <hr />
 
         <section className="retreat__transport retreat__section">
-          <h2 className="title title--medium">Comment j'y vais ?</h2>
+          <h2 className="title title--medium retreat__undertitle">
+            Comment j'y vais ?
+          </h2>
 
           <div className="retreat__transport__container">
             {data.data.transports.map((transport) => {
@@ -194,15 +198,16 @@ function Retreat(data) {
             })}
           </div>
 
-          <iframe
-            className="retreat__transport__map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22585.710049981695!2d0.39537841786193656!3d44.95964911226986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aacdab25fa5ae1%3A0xa066519d2f62f80!2sLe%20Tillet%2C%2024400%20Les%20L%C3%A8ches!5e0!3m2!1sfr!2sfr!4v1645961139040!5m2!1sfr!2sfr"
-            width="100%"
-            height="300"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
+          <div className="retreat__transport__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22585.710049981695!2d0.39537841786193656!3d44.95964911226986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aacdab25fa5ae1%3A0xa066519d2f62f80!2sLe%20Tillet%2C%2024400%20Les%20L%C3%A8ches!5e0!3m2!1sfr!2sfr!4v1645961139040!5m2!1sfr!2sfr"
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
 
           <aside className="text retreat__transport__aside">
             N.B : Un groupe WhatsApp sera créé entre les participants.es pour
@@ -213,7 +218,9 @@ function Retreat(data) {
         <hr />
 
         <section className="retreat__section retreat__program">
-          <h2 className="title title--medium retreat__program__title">Au Programme</h2>
+          <h2 className="title title--medium retreat__program__title">
+            Au Programme
+          </h2>
           <div className="retreat__program__container">
             {data.data.program.map((programItem) => {
               return (
@@ -233,7 +240,9 @@ function Retreat(data) {
         <hr />
 
         <section className="retreat__section">
-          <h2 className="title title--medium">Conditions d'annulation</h2>
+          <h2 className="title title--medium retreat__undertitle">
+            Conditions d'annulation
+          </h2>
           <p className="text">
             Du 0 au 20ème jour avant le début de la prestation, aucun
             remboursement ne sera consenti, sauf en cas de fermeture liée à la

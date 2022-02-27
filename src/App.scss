@@ -146,11 +146,11 @@ table {
   font-family: "Jost", sans-serif;
 }
 
-p{
+p {
   line-height: 1.8rem;
 }
 
-li{
+li {
   line-height: 1.2rem;
 }
 
@@ -200,7 +200,11 @@ hr {
   border: 1px dashed var(--primary);
 }
 
-// FADE IN ANIMATION 
+strong{
+  font-size: larger;
+}
+
+// FADE IN ANIMATION
 
 .fade-in-from-bottom-section {
   opacity: 0;
@@ -212,6 +216,36 @@ hr {
 }
 
 .fade-in-from-bottom-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.fade-in-from-left-section {
+  opacity: 0;
+  transform: translateX(-20vw);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+
+.fade-in-from-left-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.fade-in-from-right-section {
+  opacity: 0;
+  transform: translateX(20vw);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+
+.fade-in-from-right-section.is-visible {
   opacity: 1;
   transform: none;
   visibility: visible;
@@ -231,8 +265,6 @@ hr {
   transform: none;
   visibility: visible;
 }
-
-
 
 .btn {
   margin: 15px auto;

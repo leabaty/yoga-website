@@ -161,32 +161,16 @@
 }
 
 @media screen and (max-width: 1060px) {
-
 }
 
 @media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 430px) {
   .retreat {
-
     display: flex;
     flex-direction: column;
     align-items: center;
 
     &__section {
       margin: 3rem 0;
-    }
-
-    &__info {
-      &__container {
-        flex-direction: column;
-      }
-
-      &__item {
-        margin-bottom: 15px;
-      }
     }
 
     &__pricing {
@@ -220,18 +204,28 @@
       }
     }
 
-
     &__program {
       width: 70%;
       padding: 2rem 1.5rem;
       margin: 0 auto;
 
-
       &__title {
         margin: 2rem 0;
       }
-
     }
+  }
+}
 
+@media screen and (max-width: 430px) {
+  .retreat {
+    &__info {
+      &__container {
+        flex-direction: column;
+      }
+
+      &__item {
+        margin-bottom: 15px;
+      }
+    }
   }
 }

@@ -6,6 +6,7 @@ import "./App.scss";
 
 // DATA
 import retreatData from "./data/retreatData";
+import classes from "./data/classes";
 
 // COMPONENTS
 import Navbar from "./components/Navbar/Navbar";
@@ -33,7 +34,7 @@ function App() {
           <Route path="/" exact element={<Home />}></Route>
           <Route path="/a-propos" element={<About />}></Route>
           <Route path="/retraite" element={<Retreat data={retreatData}/>}></Route>
-          <Route path="/cours" element={<Classes />}></Route>
+          <Route path="/cours" element={<Classes data={classes}/>}></Route>
           <Route
             path="/cours-collectifs"
             element={<CollectiveClasses />}

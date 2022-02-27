@@ -1,0 +1,35 @@
+.classes {
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  &__card {
+    width: 25%;
+    padding: 1rem;
+    background-color: var(--secondarylighter);
+    border: 1px solid var(--primary);
+    box-shadow: 8px 8px 0 -1px var(--secondarylighter),
+      8px 8px 0 0 var(--primary);
+    text-decoration: none;
+    color: var(--primary);
+
+    &:hover {
+      background-color: var(--primary);
+      border: var(--secondary) 1px solid;
+      color: var(--secondary);
+    }
+
+    &__title {
+      font-size: 1.4rem;
+      font-family: "Homemade Apple", cursive;
+      font-weight: 600;
+      margin: 20px 0;
+    }
+
+    &__text {
+      margin: auto;
+      width: 80%;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "classes": {
+    "collective": {
+      "name": "Cours Collectifs",
+      "short_desc": "Toute l'énergie d'un groupe pour progresser !",
+      "long_desc": [],
+      "img_url": "https://i.ibb.co/QMJQpfm/collective-Jordan-Nix2.jpg",
+      "link_url": "/cours-collectifs"
+    },
+
+    "private": {
+      "name": "Cours Privés",
+      "short_desc": "Ciblez vos besoins, avec un accompagnement sur-mesure",
+      "long_desc": [
+        "J’adapte mes cours en fonction de vous, de vos attentes, de vos besoins : si vous avez mal au dos, si vous souffrez de stress, de tensions ou si vous voulez travailler une partie du corps en particulier (abdominaux…). En étant à votre écoute et en découvrant votre façon de pratiquer, j’établis un programme personnalisé qui évolue en suivant votre rythme. Tout en créant un cadre confiant et rassurant nous développons ensemble votre pratique du yoga quelque soit votre niveau.",
+        "Le cours se compose d’exercices de respiration, d’enchaînements de postures et d’un temps de relaxation accompagné de musique.",
+        "Prévoyez une tenue confortable, dans laquelle vous êtes à l’aise et qui vous permet une bonne amplitude de mouvement (jogging, leggings, T-shirt…)."
+      ],
+      "details": {
+        "location": "À domicile (Paris et proche banlieue)",
+        "duration": "Le cours dure 1h10 et comprend 10 minutes de relaxation guidée, avec massage si souhaité.",
+        "pricing": [
+          "Cours d’essai : 50€",
+          "Cours à l’unité : 80€",
+          "Carte de 5 cours : 350€"
+        ],
+        "multiple_students": [
+          "Cours d’essai : 40€ par personne",
+          "Cours à l’unité : 50€ par personne"
+        ],
+        "conditions": "Vous pouvez annuler votre cours à l’avance, toutefois si l’annulation se fait moins de 48h avant le cours, il sera encaissé. Si vous possédez une carte vous pouvez annuler 1 cours moins de 48h avant."
+      },
+      "img_url": "https://i.ibb.co/XFpYDT7/private-Conscious-Design.jpg",
+      "link_url": "/cours-prives"
+    },
+
+    "online": {
+      "name": "Cours en ligne",
+      "short_desc": "Pratiquez depuis le confort de votre cocon, à votre rythme",
+      "long_desc": "",
+      "img_url": "https://i.ibb.co/2hD7Z6H/online-Kari-Shea2.jpg",
+      "link_url": "/cours-en-ligne"
+    }
+  }
+}

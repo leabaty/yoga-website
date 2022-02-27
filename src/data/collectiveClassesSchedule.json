@@ -1,0 +1,117 @@
+{
+  "schedule": {
+    "monday": [
+      {
+        "startTime": "17h15",
+        "endTime": "18h15",
+        "class": "Jivamukti",
+        "studio": {
+          "name": "Be Yoga Paris",
+          "website": "https://www.beyoga.fr/fr"
+        }
+      },
+      {
+        "startTime": "20h",
+        "endTime": "21h35",
+        "class": "Jivamukti",
+        "studio": {
+          "name": "Jivamukti Yoga Paris",
+          "website": "https://www.jivamuktiyoga.fr/-TOUS-LES-COURS-?lang=fr"
+        }
+      }
+    ],
+
+    "tuesday": [
+      {
+        "startTime": "10h30",
+        "endTime": "12h05",
+        "class": "Jivamukti Medium",
+        "studio": {
+          "name": "Jivamukti Yoga Paris",
+          "website": "https://www.jivamuktiyoga.fr/-TOUS-LES-COURS-?lang=fr"
+        }
+      },
+      {
+        "startTime": "16h45",
+        "endTime": "18h15",
+        "class": "Yin",
+        "studio": {
+          "name": "Be Yoga Paris",
+          "website": "https://www.beyoga.fr/fr"
+        }
+      },
+      {
+        "startTime": "19h45",
+        "endTime": "20h45",
+        "class": "Yin",
+        "studio": {
+          "name": "Jivamukti Yoga Paris",
+          "website": "https://www.jivamuktiyoga.fr/-TOUS-LES-COURS-?lang=fr"
+        }
+      }
+    ],
+    "wednesday": [
+      {
+        "startTime": "20h",
+        "endTime": "21h30",
+        "class": "Jivamukti",
+        "studio": {
+          "name": "Jivamukti Yoga Paris",
+          "website": "https://www.jivamuktiyoga.fr/-TOUS-LES-COURS-?lang=fr"
+        }
+      }
+    ],
+    "thursday": [
+      {
+        "startTime": "19h",
+        "endTime": "21h",
+        "class": "Jivamukti",
+        "studio": {
+          "name": "Casa Yoga Paris",
+          "website": "https://www.casayoga-paris.fr/"
+        }
+      }
+    ],
+    "friday": [
+      {
+        "startTime": "09h30",
+        "endTime": "10h30",
+        "class": "Jivamukti",
+        "studio": {
+          "name": "Be Yoga Paris",
+          "website": "https://www.beyoga.fr/fr"
+        }
+      },
+      {
+        "startTime": "12h30",
+        "endTime": "13h45",
+        "class": "Jivamukti",
+        "studio": {
+          "name": "Jivamukti Yoga Paris",
+          "website": "https://www.jivamuktiyoga.fr/-TOUS-LES-COURS-?lang=fr"
+        }
+      }
+    ],
+    "saturday": [],
+    "sunday": [
+      {
+        "startTime": "11h",
+        "endTime": "12h30",
+        "class": "Jivamukti",
+        "studio": {
+          "name": "Be Yoga Paris",
+          "website": "https://www.beyoga.fr/fr"
+        }
+      },
+      {
+        "startTime": "17h30",
+        "endTime": "19h00",
+        "class": "Jivamukti",
+        "studio": {
+          "name": "En ligne",
+          "website": "https://www.apsara-yoga.com/contact"
+        }
+      }
+    ]
+  }
+}

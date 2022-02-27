@@ -1,5 +1,5 @@
 .footer {
-    color: var(--secondary);
+  color: var(--secondary);
   &__container {
     background-color: var(--primary);
     padding: 1.5rem 0;
@@ -18,7 +18,6 @@
   }
 
   &__title {
-
     text-align: right;
     white-space: nowrap;
     margin: auto 15px;
@@ -65,7 +64,6 @@
     align-items: center;
     font-size: 0.9rem;
     margin: auto 15px;
-
   }
 }
 
@@ -116,9 +114,15 @@
     &__link__wrapper {
       flex-direction: column;
     }
+
+    &__website-rights {
+      margin: 10px auto;
+    }
   }
 
   .social__icons {
     margin: auto;
+    border-right: none;
+    padding-right: 0;
   }
 }

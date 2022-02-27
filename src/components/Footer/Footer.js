@@ -11,7 +11,7 @@ function Footer() {
   return (
     <footer className="footer__container">
       <div className="footer__content">
-        <section className="footer__link__wrapper">
+        <div className="footer__link__wrapper">
           <h2 className="footer__title">A propos</h2>
 
           <div className="footer__links">
@@ -22,9 +22,9 @@ function Footer() {
               </Link>
             </div>
           </div>
-        </section>
+        </div>
 
-        <section className="social__icons">
+        <div className="social__icons">
           <a
             className="social__icon-link"
             href="https://www.facebook.com/Apsara-Yoga-621993021289337"
@@ -50,7 +50,7 @@ function Footer() {
           >
             <GiLotus />
           </a>
-        </section>
+        </div>
 
         <div className="footer__website-rights">Apsara Yoga © 2022</div>
       </div>

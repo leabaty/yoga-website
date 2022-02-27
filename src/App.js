@@ -7,6 +7,7 @@ import "./App.scss";
 // DATA
 import retreatData from "./data/retreatData";
 import classes from "./data/classes";
+import collectiveClassesSchedule from "./data/collectiveClassesSchedule";
 
 // COMPONENTS
 import Navbar from "./components/Navbar/Navbar";
@@ -37,7 +38,7 @@ function App() {
           <Route path="/cours" element={<Classes data={classes}/>}></Route>
           <Route
             path="/cours-collectifs"
-            element={<CollectiveClasses />}
+            element={<CollectiveClasses data={collectiveClassesSchedule} />}
           ></Route>
           <Route
             path="/cours-particuliers"

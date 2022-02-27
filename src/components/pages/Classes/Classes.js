@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import "./Classes.scss";
 
 function Classes({ data }) {
-  console.log(data.classes);
 
   return (
     <>

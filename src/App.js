@@ -7,6 +7,7 @@ import "./App.scss";
 // DATA
 import retreat from "./data/retreat";
 import classes from "./data/classes";
+import onlinecourse from "./data/onlinecourse";
 
 // COMPONENTS
 import Navbar from "./components/Navbar/Navbar";
@@ -17,6 +18,8 @@ import Classes from "./components/pages/Classes/Classes";
 import CollectiveClasses from "./components/pages/Classes/CollectiveClasses/CollectiveClasses";
 import PrivateClasses from "./components/pages/Classes/PrivateClasses/PrivateClasses";
 import OnlineClasses from "./components/pages/Classes/OnlineClasses/OnlineClasses";
+import Mantras from "./components/pages/Classes/OnlineClasses/Mantras/Mantras";
+import Asanas from "./components/pages/Classes/OnlineClasses/Asanas/Asanas";
 import Retreat from "./components/pages/Retreat/Retreat";
 import About from "./components/pages/About/About";
 import Contact from "./components/pages/Contact/Contact";
@@ -44,6 +47,8 @@ function App() {
             element={<PrivateClasses data={classes} />}
           ></Route>
           <Route path="/cours-en-ligne" element={<OnlineClasses data={classes}/>}></Route>
+          <Route path="/cours-en-ligne/mantras" element={<Mantras data={onlinecourse}/>}></Route>
+          <Route path="/cours-en-ligne/asanas" element={<Asanas data={onlinecourse}/>}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/mentions-legales" element={<LegalNotice />}></Route>
           <Route

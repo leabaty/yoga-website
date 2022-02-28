@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { BsCalendarWeek, BsPinMapFill } from "react-icons/bs";
 import { GiLotus } from "react-icons/gi";
@@ -19,19 +20,6 @@ function CollectiveClasses(data) {
 
         <main>
           <section>
-            {/* <div>
-                {Object.entries(data.data.classes.collective.schedule).map((day) => {
-                  return (
-                    <div>
-                      {day.map((dayDetail) => {
-                        console.log(dayDetail);
-                        return <p>Regarde le console log</p>;
-                      })}
-                    </div>
-                  );
-                })}
-              </div> */}
-
             <div className="collective__schedule">
               <div className="collective__schedule__icons">
                 <BsCalendarWeek className="collective__schedule__icons-item" />
@@ -98,33 +86,34 @@ function CollectiveClasses(data) {
                 </div>
               </div>
 
-
               <div className="collective__schedule__daycontainer">
                 <p className="collective__schedule__weekday title title--small">
                   Mercredi
                 </p>
                 <div className="collective__schedule__items">
-                  {data.data.classes.collective.schedule.wednesday.map((day) => {
-                    return (
-                      <div className="collective__schedule__item">
-                        <p className="collective__schedule__item-time">
-                          {day.startTime} - {day.endTime}
-                        </p>
+                  {data.data.classes.collective.schedule.wednesday.map(
+                    (day) => {
+                      return (
+                        <div className="collective__schedule__item">
+                          <p className="collective__schedule__item-time">
+                            {day.startTime} - {day.endTime}
+                          </p>
 
-                        <p className="collective__schedule__item-class">
-                          {day.class}
-                        </p>
+                          <p className="collective__schedule__item-class">
+                            {day.class}
+                          </p>
 
-                        <a
-                          href={day.studio.website}
-                          target="_blank"
-                          className="collective__schedule__item-studio"
-                        >
-                          {day.studio.name}
-                        </a>
-                      </div>
-                    );
-                  })}
+                          <a
+                            href={day.studio.website}
+                            target="_blank"
+                            className="collective__schedule__item-studio"
+                          >
+                            {day.studio.name}
+                          </a>
+                        </div>
+                      );
+                    }
+                  )}
                 </div>
               </div>
 
@@ -243,9 +232,23 @@ function CollectiveClasses(data) {
                   })}
                 </div>
               </div>
-
-
             </div>
+          </section>
+
+          <hr />
+
+          <section className="classes__navigation">
+            <Link to="/cours-particuliers">
+              <button className="btn btn--full btn--small btn--handwritten classes__navigation-btn">
+                Cours particuliers
+              </button>
+            </Link>
+
+            <Link to="/cours-en-ligne">
+              <button className="btn btn--full btn--small btn--handwritten classes__navigation-btn">
+                Cours en ligne
+              </button>
+            </Link>
           </section>
         </main>
       </body>

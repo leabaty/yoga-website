@@ -1,0 +1,32 @@
+{
+  "onlinecourse": {
+    "mantras": {
+      "short_desc": "Introduction aux Mantras",
+      "long_desc": [
+        "Il est scientifiquement prouvé que chanter, rend heureux. Chanter calme le mental, apaise les émotions négatives (par exemple la peur, la colère, le stress) et écouter de la musique aide au fur et à mesure à la concentration. On retrouve au sein même de la pratique du yoga le chant de mantras.Mantra, littéralement signifie 'ce qui traverse l’esprit'",
+        "Mantra, c’est un mot ou un groupe de mots qui sont répétés plusieurs fois à haute voix (chantant, parlant) ou récités mentalement. C’est par la répétition (japa) que la magie s’opère, qu’on s’oublie dans le chant et que nous résonnons à l'unisson avec l'univers."
+      ],
+      "content": [
+        {
+          "url": "https://www.youtube.com/embed/ZQ1n4mItE1o",
+          "description": [
+            "It is very nice #mantra . Kali is one of the manifestations of the wife of #Shiva and mother #goddess #Devi , Durga, is also a mother-goddess and is first mentioned in the Mahabharata, her primary scripture is the Chandi.",
+            "Durga has many different forms as sakti, she is the “ultimate female principle of the first female deity in the #universe , she is the essence of creation. She slays demons and exists without male protection or guidance. Mata is a term of respect; a #divinemother ; a namah is to bow to in reverence."
+          ]
+        },
+        { "url": "", "description": "" }
+      ]
+    },
+    "asanas": {
+      "short_desc": "Introduction aux Asanas",
+      "long_desc": [
+        "Dans les Yoga Sutras, Patanjali définit les asanas comme devant être 'sthira sukham' (II.46), stables et agréables.",
+        "Lorsque vous pratiquez, posez-vous les questions suivantes : Suis-bien stable, et est-ce que je suis à l'aise dans cette posture?"
+      ],
+      "content": [
+        { "url": "", "description": "" },
+        { "url": "", "description": "" }
+      ]
+    }
+  }
+}

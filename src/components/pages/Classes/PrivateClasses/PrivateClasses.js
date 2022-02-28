@@ -78,9 +78,25 @@ function PrivateClasses(data) {
 
           <Link to="/cours">
             <button className="btn btn--full btn--large btn--handwritten">
-              Je réserve mon cours !
+              Je réserve mon cours particulier !
             </button>
           </Link>
+
+          <hr />
+
+          <section className="classes__navigation">
+            <Link to="/cours-collectifs">
+              <button className="btn btn--full btn--small btn--handwritten classes__navigation-btn">
+                Cours collectifs
+              </button>
+            </Link>
+
+            <Link to="/cours-en-ligne">
+              <button className="btn btn--full btn--small btn--handwritten classes__navigation-btn">
+                Cours en ligne
+              </button>
+            </Link>
+          </section>
         </main>
       </body>
     </>

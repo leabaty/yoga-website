@@ -198,8 +198,7 @@
             "studio": {
               "name": "Apsara-Yoga.com",
               "url": "/cours-en-ligne/mantras"
-            },
-            "content": [{ "url": "", "description": "" }]
+            }
           },
 
           {
@@ -214,13 +213,12 @@
             "studio": {
               "name": "Apsara-Yoga.com",
               "url": "/cours-en-ligne/asanas"
-            },
-            "content": [{ "url": "", "description": "" }]
+            }
           }
         ],
 
         "onlinelive": {
-          "location": "sur Skype",
+          "location": "Skype, Zoom",
           "pricing": [
             "15 euros le cours à l'unité",
             "12 euros le cours à l'unité tarif réduit (artistes, professeurs de yoga, entrepreneurs en difficulté, intermittents...)",

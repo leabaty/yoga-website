@@ -75,7 +75,7 @@ function Contact(rooms) {
   const sendData = async (URL) => {
     setSent(true);
     try {
-      await axios.post(`https://lacouettebeneze.herokuapp.com/${URL}`, {
+      await axios.post(`https://apsara-yoga.herokuapp.com/${URL}`, {
         formData,
       });
     } catch (error) {
@@ -86,8 +86,8 @@ function Contact(rooms) {
   // FINALLY SENDING THIS EMAIL
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
-      sendData("api/v1/lacouettebeneze/send_booking_request");
-      sendData("api/v1/lacouettebeneze/send_booking_recap");
+      sendData("api/v1/apsara-yoga/send_info_request");
+      sendData("api/v1/apsara-yoga/send_info_recap");
     }
   }, [formErrors]);
 

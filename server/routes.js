@@ -1,5 +1,5 @@
 import express from "express";
-import InfoReqController from "./infoReq.controller.js";
+import InfoReqController from "./api/infoReq.controller.js"
 
 const router = express.Router();
 

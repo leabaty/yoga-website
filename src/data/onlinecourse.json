@@ -14,7 +14,7 @@
             "Durga has many different forms as sakti, she is the “ultimate female principle of the first female deity in the #universe , she is the essence of creation. She slays demons and exists without male protection or guidance. Mata is a term of respect; a #divinemother ; a namah is to bow to in reverence."
           ]
         },
-        { "url": "", "description": "" }
+        { "url": "", "description": [""] }
       ]
     },
     "asanas": {
@@ -24,8 +24,8 @@
         "Lorsque vous pratiquez, posez-vous les questions suivantes : Suis-bien stable, et est-ce que je suis à l'aise dans cette posture?"
       ],
       "content": [
-        { "url": "", "description": "" },
-        { "url": "", "description": "" }
+        { "url": "", "description": [""] },
+        { "url": "", "description": [""] }
       ]
     }
   }

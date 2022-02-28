@@ -21,7 +21,7 @@ function OnlineClassComponent(course) {
           <section>
             <p className="onlinecontent__info">
               {course.content.map((item) => {
-                console.log(item.description);
+                console.log(course.content);
                 return (
                   <div>
                     <iframe

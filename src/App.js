@@ -5,7 +5,7 @@ import ScrollToTop from "./utils/ScrollToTop";
 import "./App.scss";
 
 // DATA
-import retreatData from "./data/retreatData";
+import retreat from "./data/retreat";
 import classes from "./data/classes";
 
 // COMPONENTS
@@ -33,7 +33,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />}></Route>
           <Route path="/a-propos" element={<About />}></Route>
-          <Route path="/retraite" element={<Retreat data={retreatData}/>}></Route>
+          <Route path="/retraite" element={<Retreat data={retreat}/>}></Route>
           <Route path="/cours" element={<Classes data={classes}/>}></Route>
           <Route
             path="/cours-collectifs"

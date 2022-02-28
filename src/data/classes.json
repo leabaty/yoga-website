@@ -27,7 +27,7 @@
             }
           }
         ],
-    
+
         "tuesday": [
           {
             "startTime": "10h30",
@@ -57,7 +57,7 @@
             }
           }
         ],
-        
+
         "wednesday": [
           {
             "startTime": "20h",
@@ -155,7 +155,71 @@
       "short_desc": "Pratiquez depuis le confort de votre cocon, à votre rythme",
       "long_desc": "",
       "img_url": "https://i.ibb.co/2hD7Z6H/online-Kari-Shea2.jpg",
-      "link_url": "/cours-en-ligne"
+      "link_url": "/cours-en-ligne",
+      "details": {
+        "onlinerecorded": [
+          {
+            "name": "Sur CasaYoga.TV",
+            "short_desc": "Praesent at ex ut nisi molestie auctor. ",
+            "long_desc": [
+              "Plusieurs vidéos de yoga avec Apsara/Laure pour pratiquer n'importe où à n'importe quelle heure sont en ligne sur le site de Casa Yoga.tv",
+              "Pratiquez le Yoga Jivamukti en ligne grâce à des séances de différentes durées et de niveaux différents."
+            ],
+            "studio": {
+              "name": "CasaYoga.TV",
+              "url": "https://www.casayoga.tv/laure-pepin-yoga-en-ligne"
+            }
+          },
+          {
+            "name": "Sur Jivamukti Yoga Digital",
+            "short_desc": "Aenean sodales nunc ac viverra bibendum. Quisque quis egestas nisl.",
+            "long_desc": [
+              "Nullam condimentum, risus luctus facilisis hendrerit, velit turpis dictum metus, at ullamcorper purus sem eget est.",
+              "Morbi tempor orci eu vestibulum placerat. Suspendisse finibus lorem urna, non pellentesque diam luctus sit amet. "
+            ],
+            "studio": {
+              "name": "Jivamukti Yoga Digital",
+              "url": "https://digital.jivamuktiyoga.com/laure-pepin"
+            }
+          },
+          {
+            "name": "Sur Apsara-Yoga.com",
+            "short_desc": "Introduction aux Mantras",
+            "long_desc": [
+              "Il est scientifiquement prouvé que chanter, rend heureux. Chanter calme le mental, apaise les émotions négatives (par exemple la peur, la colère, le stress) et écouter de la musique aide au fur et à mesure à la concentration. On retrouve au sein même de la pratique du yoga le chant de mantras.Mantra, littéralement signifie 'ce qui traverse l’esprit'",
+              "Mantra, c’est un mot ou un groupe de mots qui sont répétés plusieurs fois à haute voix (chantant, parlant) ou récités mentalement. C’est par la répétition (japa) que la magie s’opère, qu’on s’oublie dans le chant et que nous résonnons à l'unisson avec l'univers."
+            ],
+            "studio": {
+              "name": "Apsara-Yoga.com",
+              "url": "/cours-en-ligne/mantras"
+            },
+            "content": [{ "url": "", "description": "" }]
+          },
+
+          {
+            "name": "Sur Apsara-Yoga.com",
+            "short_desc": "Introduction aux Asanas",
+            "long_desc": [
+              "Dans les Yoga Sutras, Patanjali définit les asanas comme devant être 'sthira sukham' (II.46), stables et agréables.",
+              "Lorsque vous pratiquez, posez-vous les questions suivantes : Suis-bien stable, et est-ce que je suis à l'aise dans cette posture?"
+            ],
+            "studio": {
+              "name": "Apsara-Yoga.com",
+              "url": "/cours-en-ligne/asanas"
+            },
+            "content": [{ "url": "", "description": "" }]
+          }
+        ],
+
+        "onlinelive": {
+          "location": "sur Skype",
+          "pricing": [
+            "15 euros le cours à l'unité",
+            "12 euros le cours à l'unité tarif réduit (artistes, professeurs de yoga, entrepreneurs en difficulté, intermittents...)",
+            "Carte de 5 cours 60 euros/ 50 euros tarif réduit"
+          ]
+        }
+      }
     }
   }
 }

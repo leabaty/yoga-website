@@ -2,7 +2,20 @@ import React from 'react'
 
 function OnlineClasses() {
   return (
-    <div>OnlineClasses</div>
+    <>
+     
+    <body className="page">
+      <header>
+        <h1 className="title">Cours en ligne</h1>
+        <hr className="title-rule" />
+      </header>
+
+      <main>
+        <section>          
+        </section>
+      </main>
+    </body>
+  </>
   )
 }
 

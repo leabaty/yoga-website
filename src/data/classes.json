@@ -5,11 +5,127 @@
       "short_desc": "Toute l'énergie d'un groupe pour progresser !",
       "long_desc": [],
       "img_url": "https://i.ibb.co/QMJQpfm/collective-Jordan-Nix2.jpg",
-      "link_url": "/cours-collectifs"
+      "link_url": "/cours-collectifs",
+      "schedule": {
+        "monday": [
+          {
+            "startTime": "17h15",
+            "endTime": "18h15",
+            "class": "Jivamukti",
+            "studio": {
+              "name": "Be Yoga Paris",
+              "website": "https://www.beyoga.fr/fr"
+            }
+          },
+          {
+            "startTime": "20h",
+            "endTime": "21h35",
+            "class": "Jivamukti",
+            "studio": {
+              "name": "Jivamukti Yoga Paris",
+              "website": "https://www.jivamuktiyoga.fr/-TOUS-LES-COURS-?lang=fr"
+            }
+          }
+        ],
+    
+        "tuesday": [
+          {
+            "startTime": "10h30",
+            "endTime": "12h05",
+            "class": "Jivamukti Medium",
+            "studio": {
+              "name": "Jivamukti Yoga Paris",
+              "website": "https://www.jivamuktiyoga.fr/-TOUS-LES-COURS-?lang=fr"
+            }
+          },
+          {
+            "startTime": "16h45",
+            "endTime": "18h15",
+            "class": "Yin",
+            "studio": {
+              "name": "Be Yoga Paris",
+              "website": "https://www.beyoga.fr/fr"
+            }
+          },
+          {
+            "startTime": "19h45",
+            "endTime": "20h45",
+            "class": "Yin",
+            "studio": {
+              "name": "Jivamukti Yoga Paris",
+              "website": "https://www.jivamuktiyoga.fr/-TOUS-LES-COURS-?lang=fr"
+            }
+          }
+        ],
+        
+        "wednesday": [
+          {
+            "startTime": "20h",
+            "endTime": "21h30",
+            "class": "Jivamukti",
+            "studio": {
+              "name": "Jivamukti Yoga Paris",
+              "website": "https://www.jivamuktiyoga.fr/-TOUS-LES-COURS-?lang=fr"
+            }
+          }
+        ],
+        "thursday": [
+          {
+            "startTime": "19h",
+            "endTime": "21h",
+            "class": "Jivamukti",
+            "studio": {
+              "name": "Casa Yoga Paris",
+              "website": "https://www.casayoga-paris.fr/"
+            }
+          }
+        ],
+        "friday": [
+          {
+            "startTime": "09h30",
+            "endTime": "10h30",
+            "class": "Jivamukti",
+            "studio": {
+              "name": "Be Yoga Paris",
+              "website": "https://www.beyoga.fr/fr"
+            }
+          },
+          {
+            "startTime": "12h30",
+            "endTime": "13h45",
+            "class": "Jivamukti",
+            "studio": {
+              "name": "Jivamukti Yoga Paris",
+              "website": "https://www.jivamuktiyoga.fr/-TOUS-LES-COURS-?lang=fr"
+            }
+          }
+        ],
+        "saturday": [],
+        "sunday": [
+          {
+            "startTime": "11h",
+            "endTime": "12h30",
+            "class": "Jivamukti",
+            "studio": {
+              "name": "Be Yoga Paris",
+              "website": "https://www.beyoga.fr/fr"
+            }
+          },
+          {
+            "startTime": "17h30",
+            "endTime": "19h00",
+            "class": "Jivamukti",
+            "studio": {
+              "name": "En ligne",
+              "website": "https://www.apsara-yoga.com/contact"
+            }
+          }
+        ]
+      }
     },
 
     "private": {
-      "name": "Cours Privés",
+      "name": "Cours Particuliers",
       "short_desc": "Ciblez vos besoins, avec un accompagnement sur-mesure",
       "long_desc": [
         "J’adapte mes cours en fonction de vous, de vos attentes, de vos besoins : si vous avez mal au dos, si vous souffrez de stress, de tensions ou si vous voulez travailler une partie du corps en particulier (abdominaux…). En étant à votre écoute et en découvrant votre façon de pratiquer, j’établis un programme personnalisé qui évolue en suivant votre rythme. Tout en créant un cadre confiant et rassurant nous développons ensemble votre pratique du yoga quelque soit votre niveau.",
@@ -31,7 +147,7 @@
         "conditions": "Vous pouvez annuler votre cours à l’avance, toutefois si l’annulation se fait moins de 48h avant le cours, il sera encaissé. Si vous possédez une carte vous pouvez annuler 1 cours moins de 48h avant."
       },
       "img_url": "https://i.ibb.co/XFpYDT7/private-Conscious-Design.jpg",
-      "link_url": "/cours-prives"
+      "link_url": "/cours-particuliers"
     },
 
     "online": {

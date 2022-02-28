@@ -61,7 +61,7 @@ function Retreat(data) {
         </div>
       </header>
 
-      <section className="retreat__info">
+      <div className="retreat__info">
         <div className="retreat__info__container">
           <div className="retreat__info__item">
             <BsCalendarWeek className="retreat__info__item__icon" />
@@ -98,7 +98,7 @@ function Retreat(data) {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <main className="page">
         <section>

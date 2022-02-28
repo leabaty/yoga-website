@@ -1,22 +1,65 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-function OnlineClasses() {
+import "./OnlineClasses.scss";
+
+function OnlineClasses(data) {
+  console.log(data.data.classes.online.type.onlinerecorded);
   return (
     <>
-     
-    <body className="page">
-      <header>
-        <h1 className="title">Cours en ligne</h1>
-        <hr className="title-rule" />
-      </header>
+      <body className="page">
+        <header>
+          <h1 className="title">Cours en ligne</h1>
+          <hr className="title-rule" />
+        </header>
 
-      <main>
-        <section>          
-        </section>
-      </main>
-    </body>
-  </>
-  )
+        <main>
+          <section className="onlineclasses__cards">
+            {data.data.classes.online.type.onlinerecorded.map((classType) => {
+              return (
+                <a
+                  className="onlineclasses__card"
+                  href={classType.studio.url}
+                  target="_blank"
+                >
+                  <div>
+                    <h1 className="onlineclasses__card__title">
+                      Sur {classType.studio.name}
+                    </h1>
+                    <img
+                      className="onlineclasses__card__img"
+                      src={classType.img_url}
+                    />
+                    <p className="onlineclasses__card__text">
+                      {classType.short_desc}
+                    </p>
+                  </div>
+                </a>
+              );
+            })}
+          </section>
+
+          <section className="onlineclasses__onlinelive">
+            <h1 className="title title--small">
+              {" "}
+              Les cours {data.data.classes.online.type.onlinelive.location}
+            </h1>
+            <p>
+              {data.data.classes.online.type.onlinelive.pricing.map((info) => {
+                return <li className="onlineclasses__onlinelive__instruction" key={info}>{info}</li>;
+              })}
+            </p>
+
+            <Link to="/cours">
+              <button className="btn btn--full btn--medium btn--handwritten">
+                Ca m'intéresse
+              </button>
+            </Link>
+          </section>
+        </main>
+      </body>
+    </>
+  );
 }
 
-export default OnlineClasses
+export default OnlineClasses;

@@ -1,0 +1,85 @@
+.onlineclasses {
+    &__cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      max-width: 250px;
+      padding: 1rem;
+      background-color: var(--secondarylighter);
+      border: 1px solid var(--primary);
+      box-shadow: 8px 8px 0 -1px var(--secondarylighter),
+        8px 8px 0 0 var(--primary);
+      text-decoration: none;
+      color: var(--primary);
+      margin: 1rem;
+  
+      &:hover {
+        background-color: var(--primary);
+        border: var(--secondary) 1px solid;
+        color: var(--secondary);
+        cursor: pointer;
+      }
+  
+      &__title {
+        font-size: 1.4rem;
+        margin: 20px 0;
+      }
+  
+      &__text {
+        margin: auto;
+        width: 80%;
+      }
+
+    }
+    &__onlinelive{
+      width: 60%;
+      margin: auto;
+
+      &__instruction {
+        margin-bottom: 15px;
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 1.5rem;
+        list-style: none;
+        
+      }
+  
+      &__instruction::before {
+        content: "→";
+        color: var(--primary);
+        font-weight: bold;
+        display: inline-block;
+        width: 1.4em;
+        margin-left: -1em;
+      }
+    }
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+    .onlineclasses {
+      &__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      &__card {
+        margin: 1.5rem;
+        width: 50%;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .classes {
+      &__card {
+        width: 70%;
+      }
+    }
+  }
+  

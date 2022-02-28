@@ -43,7 +43,7 @@ function App() {
             path="/cours-particuliers"
             element={<PrivateClasses data={classes} />}
           ></Route>
-          <Route path="/cours-en-ligne" element={<OnlineClasses />}></Route>
+          <Route path="/cours-en-ligne" element={<OnlineClasses data={classes}/>}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/mentions-legales" element={<LegalNotice />}></Route>
           <Route

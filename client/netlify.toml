@@ -2,9 +2,3 @@
   from = "/*"
   to = "/index.html"
   status = 200
-
-# A redirect rule with many of the supported properties
-# [[redirects]]
-#   from = "*"
-#   to = "/not-found"
-#   status = 404

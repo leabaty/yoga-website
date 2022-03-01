@@ -239,13 +239,13 @@ function CollectiveClasses(data) {
 
           <section className="classes__navigation">
             <Link to="/cours-particuliers">
-              <button className="btn btn--full btn--small btn--handwritten classes__navigation-btn">
+              <button className="btn btn--full btn--small classes__navigation-btn">
                 Cours particuliers
               </button>
             </Link>
 
             <Link to="/cours-en-ligne">
-              <button className="btn btn--full btn--small btn--handwritten classes__navigation-btn">
+              <button className="btn btn--full btn--small classes__navigation-btn">
                 Cours en ligne
               </button>
             </Link>

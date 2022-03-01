@@ -32,9 +32,9 @@ function OnlineClasses(data) {
               })}
             </p>
 
-            <Link to="/cours">
+            <Link to="/contact">
               <button className="btn btn--full btn--medium btn--handwritten">
-                Ca m'intéresse
+                Ca m'intéresse !
               </button>
             </Link>
           </section>
@@ -73,13 +73,13 @@ function OnlineClasses(data) {
 
           <section className="classes__navigation">
             <Link to="/cours-collectifs">
-              <button className="btn btn--full btn--small btn--handwritten classes__navigation-btn">
+              <button className="btn btn--full btn--small classes__navigation-btn">
                 Cours collectifs
               </button>
             </Link>
 
             <Link to="/cours-particuliers">
-              <button className="btn btn--full btn--small btn--handwritten classes__navigation-btn">
+              <button className="btn btn--full btn--small classes__navigation-btn">
                 Cours particuliers
               </button>
             </Link>

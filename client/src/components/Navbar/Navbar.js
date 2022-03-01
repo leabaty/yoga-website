@@ -22,8 +22,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar__container">
-          
-           <div className="mobilemenu__navbar">
+          <div className="mobilemenu__navbar">
             <div className="mobilemenu__logo">
               <Link to="/" className="navbar__title" onClick={closeMobileMenu}>
                 <p className="navbar__title">Apsara</p>
@@ -41,13 +40,12 @@ function Navbar() {
             </div>
           </div>
 
-
           <div
             className={
               openedMobileMenu ? "navbar__menu active" : "navbar__menu"
             }
           >
-            <div className="navbar__menu__left">
+            <ol className="navbar__menu__left">
               <li className="nav-item">
                 <Link
                   to="/a-propos"
@@ -77,7 +75,7 @@ function Navbar() {
                   Cours
                 </Link>
               </li>
-            </div>
+            </ol>
 
             <div className="navbar__menu__center">
               <Link to="/" className="navbar__title" onClick={closeMobileMenu}>
@@ -91,7 +89,7 @@ function Navbar() {
               </Link>
             </div>
 
-            <div className="navbar__menu__right">
+            <ol className="navbar__menu__right">
               <li className="nav-item">
                 <Link
                   to="/contact"
@@ -108,6 +106,7 @@ function Navbar() {
                   target="_blank"
                   className="nav-links --social"
                   onClick={closeMobileMenu}
+                  alt="Instagram"
                 >
                   <RiInstagramLine />
                 </a>
@@ -119,11 +118,12 @@ function Navbar() {
                   target="_blank"
                   className="nav-links --social"
                   onClick={closeMobileMenu}
+                  alt="Facebook"
                 >
                   <RiFacebookBoxLine />
                 </a>
               </li>
-            </div>
+            </ol>
           </div>
         </div>
       </nav>

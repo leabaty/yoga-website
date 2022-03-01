@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { BsPeopleFill, BsPinMapFill, BsPinMap } from "react-icons/bs";
+import { BsPeopleFill, BsPinMapFill } from "react-icons/bs";
 import { AiOutlineEuro } from "react-icons/ai";
 import { IoMdTime } from "react-icons/io";
 import { HiOutlinePlusSm } from "react-icons/hi";
@@ -86,13 +86,13 @@ function PrivateClasses(data) {
 
           <section className="classes__navigation">
             <Link to="/cours-collectifs">
-              <button className="btn btn--full btn--small btn--handwritten classes__navigation-btn">
+              <button className="btn btn--full btn--small classes__navigation-btn">
                 Cours collectifs
               </button>
             </Link>
 
             <Link to="/cours-en-ligne">
-              <button className="btn btn--full btn--small btn--handwritten classes__navigation-btn">
+              <button className="btn btn--full btn--small classes__navigation-btn">
                 Cours en ligne
               </button>
             </Link>

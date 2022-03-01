@@ -153,12 +153,14 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-    }
+ }
 
     &__menu {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+
+
       width: 100%;
       height: 60vh;
       position: absolute;
@@ -170,6 +172,7 @@
 
     &__menu.active {
       background: var(--primary);
+
       left: 0%;
       padding: 0;
       opacity: 1;
@@ -181,6 +184,8 @@
   .nav {
     &-links {
       height: 4rem;
+      justify-content: flex-end;
+      margin-right: 1rem;
     }
 
     &-item:hover {

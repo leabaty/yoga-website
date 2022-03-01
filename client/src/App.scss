@@ -173,6 +173,7 @@ section{
   font-weight: 600;
   color: var(--primary);
   margin: 20px 0;
+  line-height: 3rem;
 }
 
 .title--medium {
@@ -362,7 +363,7 @@ strong{
   }
 
   .page {
-    padding: 15px 0 0 0;
+    padding: 40px 0 0 0;
     text-align: center;
     margin: 0 auto;
     max-width: 100%;

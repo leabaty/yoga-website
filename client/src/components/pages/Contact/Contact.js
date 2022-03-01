@@ -128,7 +128,6 @@ function Contact(rooms) {
           <div>
             <p className="text">
               Merci, votre demande m'a bien été transmise. <br />
-              Une copie de votre demande vous a été adressée. <br />
               Vous recevrez une réponse très bientôt à l'adresse mail indiquée.{" "}
               <br /> ⚠️ Pensez à bien vérifier votre dossier de SPAMS 📧 !
             </p>

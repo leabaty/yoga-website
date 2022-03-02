@@ -14,7 +14,6 @@ function RetreatProgram(program) {
             return (
 
               <div className="retreat__program__item">
-               <div>Coucou</div>
                 <p className="retreat__program__item-time">
                   {programItem.startTime} - {programItem.endTime}
                 </p>

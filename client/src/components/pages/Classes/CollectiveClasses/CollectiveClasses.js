@@ -8,7 +8,6 @@ import { IoMdTime } from "react-icons/io";
 import "./CollectiveClasses.scss";
 
 function CollectiveClasses(data) {
-  console.log(data.data.classes.collective.schedule);
 
   return (
     <>

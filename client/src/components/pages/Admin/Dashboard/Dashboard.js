@@ -13,17 +13,17 @@ function Dashboard(data) {
 
         <main>
           <section className="classes__cards">
-            {Object.values(data.data.dashboard).map((classType) => {
+            {Object.values(data.data.dashboard).map((item) => {
               return (
-                <Link className="classes__card" to={classType.link_url}>
+                <Link className="classes__card" to={item.link_url}>
                   <div>
-                    <h1 className="classes__card__title">{classType.name}</h1>
+                    <h1 className="classes__card__title">{item.name}</h1>
                     <img
                       className="classes__card__img"
-                      src={classType.img_url}
+                      src={item.img_url}
                     />
                     <p className="classes__card__text">
-                      {classType.short_desc}
+                      {item.short_desc}
                     </p>
                   </div>
                 </Link>

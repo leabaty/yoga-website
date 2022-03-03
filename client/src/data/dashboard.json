@@ -1,0 +1,20 @@
+{
+  "dashboard": {
+    "updatecollectiveclasses": {
+      "name": "Cours Collectifs",
+      "short_desc": "Mettre à jour le planning mensuel",
+      "long_desc": [],
+      "img_url": "https://i.ibb.co/tL6S6yf/collective-Louise-Vildmark.webp",
+      "img_alt": "collective-Louise-Vildmark",
+      "link_url": "/admin/cours-collectifs"
+    },
+    "updateretreat": {
+      "name": "Retraite annuelle",
+      "short_desc": "Mettre à jour les infos de la retraite",
+      "long_desc": [],
+      "img_url": "https://i.ibb.co/2t8TMr1/retreat-sun-Jared-Rice.webp",
+      "img_alt": "retreat-sun-Jared-Rice",
+      "link_url": "/admin/retraite"
+    }
+  }
+}

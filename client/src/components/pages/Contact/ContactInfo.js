@@ -5,10 +5,10 @@ import "./Contact.scss";
 function ContactInfo({ handleChange, formData }) {
   return (
     <>
-      <div className="contact-form__information">
-        <div className="contact-form__element">
+      <div className="form__information">
+        <div className="form__element">
           <textarea
-            className="contact-form__input --text"
+            className="form__input --text"
             placeholder="Saisissez l'objet de votre demande ici... "
             type="text"
             name="information_request"

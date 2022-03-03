@@ -100,7 +100,7 @@ function Contact(rooms) {
         <hr className="title-rule" />
 
         {!sent ? (
-          <form className="contact-form" onSubmit={handleSubmit}>
+          <form className="form" onSubmit={handleSubmit}>
             <ContactBase
               handleChange={handleChange}
               formData={formData}

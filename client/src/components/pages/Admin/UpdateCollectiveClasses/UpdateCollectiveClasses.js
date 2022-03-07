@@ -1,19 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { BsCalendarWeek, BsPinMapFill, BsLaptop } from "react-icons/bs";
+import { BsCalendarWeek, BsPinMapFill} from "react-icons/bs";
 import { GiLotus } from "react-icons/gi";
 import { IoMdTime } from "react-icons/io";
-import { FiMapPin } from "react-icons/fi";
+import { MdCancel } from "react-icons/md";
 
 import "./UpdateCollectiveClasses.scss";
+import AddCollectiveClass from "./AddCollectiveClass";
 
 function UpdateCollectiveClasses(data) {
   return (
     <>
       <body className="page">
         <header>
-          <h1 className="title">Cours Collectifs</h1>
+          <h1 className="title">Editer les cours Collectifs</h1>
           <hr className="title-rule" />
         </header>
 
@@ -50,68 +51,18 @@ function UpdateCollectiveClasses(data) {
                         >
                           {day.studio.name}
                         </a>
+
+                        <button className="collective__schedule__item-delete">
+                          <MdCancel />
+                        </button>
                       </div>
                     );
                   })}
 
                   <div className="collective__schedule__item">
-                    <div className="collective__schedule__item-form --row">
-                      <input
-                        className="collective__schedule__item-form-input --time"
-                        placeholder="Début"
-                        type="text"
-                        name="startTime"
-                        // onChange={handleChange}
-                        // value={formData.firstname}
-                      />
-                      <p className="collective__schedule__item-form-element">
-                        -
-                      </p>
-                      <input
-                        className="collective__schedule__item-form-input --time"
-                        placeholder="Fin"
-                        type="text"
-                        name="endTime"
-                        // onChange={handleChange}
-                        // value={formData.firstname}
-                      />
-                    </div>
-
-                    <input
-                      className="collective__schedule__item-form collective__schedule__item-form-input collective__schedule__item-form-input--class"
-                      placeholder="Cours"
-                      type="text"
-                      name="class"
-                      // onChange={handleChange}
-                      // value={formData.firstname}
-                    />
-
-                    <div className="collective__schedule__item-form --col">
-                      <div className="collective__schedule__item-form-element --row">
-                        <FiMapPin className="collective__schedule__item-form-icon" />
-                        <input
-                          className="collective__schedule__item-form-input collective__schedule__item-form-input--studio"
-                          placeholder="Studio"
-                          type="text"
-                          name="studioName"
-                          // onChange={handleChange}
-                          // value={formData.firstname}
-                        />
-                      </div>
-
-                      <div className="collective__schedule__item-form-element --row">
-                        <BsLaptop className="collective__schedule__item-form-icon" />
-                        <input
-                          className="collective__schedule__item-form-input collective__schedule__item-form-input--studio"
-                          placeholder="Site web du studio"
-                          type="text"
-                          name="studioWebsite"
-                          // onChange={handleChange}
-                          // value={formData.firstname}
-                        />
-                      </div>
-                    </div>
+                    <AddCollectiveClass/>
                   </div>
+                  
                 </div>
               </div>
 
@@ -138,6 +89,9 @@ function UpdateCollectiveClasses(data) {
                         >
                           {day.studio.name}
                         </a>
+                        <button className="collective__schedule__item-delete">
+                          <MdCancel />
+                        </button>
                       </div>
                     );
                   })}
@@ -168,6 +122,9 @@ function UpdateCollectiveClasses(data) {
                           >
                             {day.studio.name}
                           </a>
+                          <button className="collective__schedule__item-delete">
+                            <MdCancel />
+                          </button>
                         </div>
                       );
                     }
@@ -198,6 +155,9 @@ function UpdateCollectiveClasses(data) {
                         >
                           {day.studio.name}
                         </a>
+                        <button className="collective__schedule__item-delete">
+                          <MdCancel />
+                        </button>
                       </div>
                     );
                   })}
@@ -227,6 +187,9 @@ function UpdateCollectiveClasses(data) {
                         >
                           {day.studio.name}
                         </a>
+                        <button className="collective__schedule__item-delete">
+                          <MdCancel />
+                        </button>
                       </div>
                     );
                   })}
@@ -256,6 +219,9 @@ function UpdateCollectiveClasses(data) {
                         >
                           {day.studio.name}
                         </a>
+                        <button className="collective__schedule__item-delete">
+                          <MdCancel />
+                        </button>
                       </div>
                     );
                   })}
@@ -285,6 +251,9 @@ function UpdateCollectiveClasses(data) {
                         >
                           {day.studio.name}
                         </a>
+                        <button className="collective__schedule__item-delete">
+                          <MdCancel />
+                        </button>
                       </div>
                     );
                   })}

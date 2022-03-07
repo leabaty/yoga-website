@@ -1,56 +1,17 @@
+// DELETE BUTTON
+
 .collective {
   &__schedule {
     &__item {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-
-      &-form {
-        width: 33%;
-
-        &-icon {
-          margin-right: 5px;
-        }
-
-        &-input {
-          height: 25px;
-          margin-bottom: 8px;
-          font-family: "Jost", sans-serif;
-          text-align: center;
-          background-color: var(--secondarylighter);
-          border: 1px solid var(--primary);
-          border-radius: 5px;
-
-          &--class {
-            max-width: 200px;
-          }
-
-          &--studio {
-            width: 200px;
-          }
-        }
-
-        &-element {
-          margin: 0 5px;
-        }
+      &-delete {
+        border: none;
+        color: var(--primary);
+        cursor: pointer;
+        background-color: var(--secondary);
+        font-size: 1.2rem;
       }
     }
   }
 }
 
-.--time {
-  max-width: 35%;
-}
 
-.--row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.--col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}

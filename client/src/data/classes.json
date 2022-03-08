@@ -9,6 +9,7 @@
       "schedule": {
         "monday": [
           {
+            "id":"1",
             "startTime": "17h15",
             "endTime": "18h15",
             "class": "Jivamukti",
@@ -18,6 +19,7 @@
             }
           },
           {
+            "id":"2",
             "startTime": "20h",
             "endTime": "21h35",
             "class": "Jivamukti",
@@ -30,6 +32,7 @@
 
         "tuesday": [
           {
+            "id":"3",
             "startTime": "10h30",
             "endTime": "12h05",
             "class": "Jivamukti Medium",
@@ -39,6 +42,7 @@
             }
           },
           {
+            "id":"4",
             "startTime": "16h45",
             "endTime": "18h15",
             "class": "Yin",
@@ -48,6 +52,7 @@
             }
           },
           {
+            "id":"5",
             "startTime": "19h45",
             "endTime": "20h45",
             "class": "Yin",
@@ -60,6 +65,7 @@
 
         "wednesday": [
           {
+            "id":"6",
             "startTime": "20h",
             "endTime": "21h30",
             "class": "Jivamukti",
@@ -71,6 +77,7 @@
         ],
         "thursday": [
           {
+            "id":"7",
             "startTime": "19h",
             "endTime": "21h",
             "class": "Jivamukti",
@@ -82,6 +89,7 @@
         ],
         "friday": [
           {
+            "id":"8",
             "startTime": "09h30",
             "endTime": "10h30",
             "class": "Jivamukti",
@@ -91,6 +99,7 @@
             }
           },
           {
+            "id":"9",
             "startTime": "12h30",
             "endTime": "13h45",
             "class": "Jivamukti",
@@ -103,6 +112,7 @@
         "saturday": [],
         "sunday": [
           {
+            "id":"10",
             "startTime": "11h",
             "endTime": "12h30",
             "class": "Jivamukti",
@@ -112,6 +122,7 @@
             }
           },
           {
+            "id":"11",
             "startTime": "17h30",
             "endTime": "19h00",
             "class": "Jivamukti",

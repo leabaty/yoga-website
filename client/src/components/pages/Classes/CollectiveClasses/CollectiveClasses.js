@@ -8,6 +8,17 @@ import { IoMdTime } from "react-icons/io";
 import "./CollectiveClasses.scss";
 
 function CollectiveClasses(data) {
+  const days = [
+    "Lundi",
+    "Mardi",
+    "Mercredi",
+    "Jeudi",
+    "Vendredi",
+    "Samedi",
+    "Dimanche",
+  ];
+
+
 
   return (
     <>
@@ -27,210 +38,51 @@ function CollectiveClasses(data) {
                 <BsPinMapFill className="collective__schedule__icons-item" />
               </div>
 
-              <div className="collective__schedule__daycontainer">
-                <p className="collective__schedule__weekday title title--small">
-                  Lundi
-                </p>
-                <div className="collective__schedule__items">
-                  {data.data.classes.collective.schedule.monday.map((day) => {
-                    return (
-                      <div className="collective__schedule__item">
-                        <p className="collective__schedule__item-time">
-                          {day.startTime} - {day.endTime}
-                        </p>
+              {Object.values(data.data.classes.collective.schedule).map(
+                (day, index) => {
+                  console.log(day);
+                  return (
+                    <div
+                      key={index}
+                      className="collective__schedule__daycontainer"
+                    >
+                      <p className="collective__schedule__weekday title title--small">
+                        {days[index]}
+                      </p>
 
-                        <p className="collective__schedule__item-class">
-                          {day.class}
-                        </p>
+                      <div className="collective__schedule__items">
+                        {day.map((scheduleItem) => {
+                          return (
+                            <div
+                              key={day.id}
+                              className="collective__schedule__item"
+                            >
+                              <p className="collective__schedule__item-time">
+                                {scheduleItem.startTime} - {" "}
+                                {scheduleItem.endTime}
+                              </p>
 
-                        <a
-                          href={day.studio.website}
-                          target="_blank"
-                          className="collective__schedule__item-studio"
-                        >
-                          {day.studio.name}
-                        </a>
+                              <p className="collective__schedule__item-class">
+                                {scheduleItem.class}
+                              </p>
+
+                              <a
+                                href={scheduleItem.studio.website}
+                                target="_blank"
+                                className="collective__schedule__item-studio"
+                              >
+                                {scheduleItem.studio.name}
+                              </a>
+                            </div>
+                          );
+                        })}
+
+                        
                       </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div className="collective__schedule__daycontainer">
-                <p className="collective__schedule__weekday title title--small">
-                  Mardi
-                </p>
-                <div className="collective__schedule__items">
-                  {data.data.classes.collective.schedule.tuesday.map((day) => {
-                    return (
-                      <div className="collective__schedule__item">
-                        <p className="collective__schedule__item-time">
-                          {day.startTime} - {day.endTime}
-                        </p>
-
-                        <p className="collective__schedule__item-class">
-                          {day.class}
-                        </p>
-
-                        <a
-                          href={day.studio.website}
-                          target="_blank"
-                          className="collective__schedule__item-studio"
-                        >
-                          {day.studio.name}
-                        </a>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div className="collective__schedule__daycontainer">
-                <p className="collective__schedule__weekday title title--small">
-                  Mercredi
-                </p>
-                <div className="collective__schedule__items">
-                  {data.data.classes.collective.schedule.wednesday.map(
-                    (day) => {
-                      return (
-                        <div className="collective__schedule__item">
-                          <p className="collective__schedule__item-time">
-                            {day.startTime} - {day.endTime}
-                          </p>
-
-                          <p className="collective__schedule__item-class">
-                            {day.class}
-                          </p>
-
-                          <a
-                            href={day.studio.website}
-                            target="_blank"
-                            className="collective__schedule__item-studio"
-                          >
-                            {day.studio.name}
-                          </a>
-                        </div>
-                      );
-                    }
-                  )}
-                </div>
-              </div>
-
-              <div className="collective__schedule__daycontainer">
-                <p className="collective__schedule__weekday title title--small">
-                  Jeudi
-                </p>
-                <div className="collective__schedule__items">
-                  {data.data.classes.collective.schedule.thursday.map((day) => {
-                    return (
-                      <div className="collective__schedule__item">
-                        <p className="collective__schedule__item-time">
-                          {day.startTime} - {day.endTime}
-                        </p>
-
-                        <p className="collective__schedule__item-class">
-                          {day.class}
-                        </p>
-
-                        <a
-                          href={day.studio.website}
-                          target="_blank"
-                          className="collective__schedule__item-studio"
-                        >
-                          {day.studio.name}
-                        </a>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div className="collective__schedule__daycontainer">
-                <p className="collective__schedule__weekday title title--small">
-                  Vendredi
-                </p>
-                <div className="collective__schedule__items">
-                  {data.data.classes.collective.schedule.friday.map((day) => {
-                    return (
-                      <div className="collective__schedule__item">
-                        <p className="collective__schedule__item-time">
-                          {day.startTime} - {day.endTime}
-                        </p>
-
-                        <p className="collective__schedule__item-class">
-                          {day.class}
-                        </p>
-
-                        <a
-                          href={day.studio.website}
-                          target="_blank"
-                          className="collective__schedule__item-studio"
-                        >
-                          {day.studio.name}
-                        </a>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div className="collective__schedule__daycontainer">
-                <p className="collective__schedule__weekday title title--small">
-                  Samedi
-                </p>
-                <div className="collective__schedule__items">
-                  {data.data.classes.collective.schedule.saturday.map((day) => {
-                    return (
-                      <div className="collective__schedule__item">
-                        <p className="collective__schedule__item-time">
-                          {day.startTime} - {day.endTime}
-                        </p>
-
-                        <p className="collective__schedule__item-class">
-                          {day.class}
-                        </p>
-
-                        <a
-                          href={day.studio.website}
-                          target="_blank"
-                          className="collective__schedule__item-studio"
-                        >
-                          {day.studio.name}
-                        </a>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div className="collective__schedule__daycontainer">
-                <p className="collective__schedule__weekday title title--small">
-                  Dimanche
-                </p>
-                <div className="collective__schedule__items">
-                  {data.data.classes.collective.schedule.sunday.map((day) => {
-                    return (
-                      <div className="collective__schedule__item">
-                        <p className="collective__schedule__item-time">
-                          {day.startTime} - {day.endTime}
-                        </p>
-
-                        <p className="collective__schedule__item-class">
-                          {day.class}
-                        </p>
-
-                        <a
-                          href={day.studio.website}
-                          target="_blank"
-                          className="collective__schedule__item-studio"
-                        >
-                          {day.studio.name}
-                        </a>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
+                    </div>
+                  );
+                }
+              )}
             </div>
           </section>
 

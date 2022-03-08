@@ -46,7 +46,7 @@ function App() {
           <Route path="/cours" element={<Classes data={classes} />}></Route>
           <Route
             path="/cours-collectifs"
-            element={<CollectiveClasses data={classes} />}
+            element={<CollectiveClasses data={classes} admin={false} />}
           ></Route>
           <Route
             path="/cours-particuliers"
@@ -74,7 +74,7 @@ function App() {
           <Route path="/admin/tableau-de-bord" element={<Dashboard data={dashboard} />}></Route>
           <Route
             path="/admin/cours-collectifs"
-            element={<UpdateCollectiveClasses data={classes}/>}
+            element={<CollectiveClasses data={classes} admin={true} />}
           ></Route>
           <Route path="/admin/retraite" element={<UpdateRetreat />}></Route>
           <Route path="*" element={<NotFound />}></Route>

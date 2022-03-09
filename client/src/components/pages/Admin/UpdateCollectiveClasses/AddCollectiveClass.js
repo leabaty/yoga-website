@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 import { BsLaptop } from "react-icons/bs";
 import { FiMapPin } from "react-icons/fi";
@@ -6,11 +7,64 @@ import { MdAddCircle, MdAddCircleOutline } from "react-icons/md";
 
 import "./AddCollectiveClass.scss";
 
-function AddCollectiveClass() {
+function AddCollectiveClass({ weekday }) {
+  console.log(weekday);
+
+  //STATE
+  const [collectiveClassesData, setCollectiveClassesData] = useState({
+    startTime: "",
+    endTime: "",
+    class: "",
+    studioName: "",
+    studioWebsite: "",
+  });
+
+  const [isSubmit, setIsSubmit] = useState(false);
+
+  // FILLING IN THE FORM OBJECT "LIVE"
+  const handleChange = (event) => {
+    const value = event.target.value;
+
+    setCollectiveClassesData({
+      ...collectiveClassesData,
+      [event.target.name]: value,
+    });
+  };
+
+  // HANDLING THE FORM SUBMIT
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setIsSubmit(true);
+
+    setCollectiveClassesData((prevState) => {
+      return {
+        ...prevState,
+        weekday: weekday,
+      };
+    });
+  };
+
+  // API SETTINGS
+  // api params
+  const postData = async (URL) => {
+    try {
+      await axios.post(`https://apsara-yoga.herokuapp.com/${URL}`, {
+        collectiveClassesData,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  // routes
+  useEffect(() => {
+    if (isSubmit) {
+      postData("api/v1/apsara-yoga/post-collective-class");
+    }
+  }, []);
 
   return (
     <>
-      <form className="edit-schedule">
+      <form className="edit-schedule" onSubmit={handleSubmit}>
         <div className="edit-schedule__container">
           <div className="edit-schedule__item row">
             <input
@@ -18,8 +72,8 @@ function AddCollectiveClass() {
               placeholder="Début"
               type="text"
               name="startTime"
-              // onChange={handleChange}
-              // value={formData.firstname}
+              onChange={handleChange}
+              value={collectiveClassesData.startTime}
             />
             <p>-</p>
             <input
@@ -27,8 +81,8 @@ function AddCollectiveClass() {
               placeholder="Fin"
               type="text"
               name="endTime"
-              // onChange={handleChange}
-              // value={formData.firstname}
+              onChange={handleChange}
+              value={collectiveClassesData.endTime}
             />
           </div>
 
@@ -38,8 +92,8 @@ function AddCollectiveClass() {
               placeholder="Cours"
               type="text"
               name="class"
-              // onChange={handleChange}
-              // value={formData.firstname}
+              onChange={handleChange}
+              value={collectiveClassesData.class}
             />
           </div>
 
@@ -51,8 +105,8 @@ function AddCollectiveClass() {
                 placeholder="Studio"
                 type="text"
                 name="studioName"
-                // onChange={handleChange}
-                // value={formData.firstname}
+                onChange={handleChange}
+                value={collectiveClassesData.studioName}
               />
             </div>
 
@@ -63,14 +117,14 @@ function AddCollectiveClass() {
                 placeholder="Site web du studio"
                 type="text"
                 name="studioWebsite"
-                // onChange={handleChange}
-                // value={formData.firstname}
+                onChange={handleChange}
+                value={collectiveClassesData.studioWebsite}
               />
             </div>
           </div>
         </div>
 
-        <button className="collective__schedule__item-delete">
+        <button className="edit-schedule__btn">
           <MdAddCircleOutline />
         </button>
       </form>

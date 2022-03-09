@@ -1,57 +1,65 @@
 .edit-schedule {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-  
-    &__container {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      justify-content: space-between;
-    }
-  
-    &__item {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 33%;
-  
-      &-input {
-        height: 25px;
-        margin: 0 10px 8px 10px;
-        font-family: "Jost", sans-serif;
-        text-align: center;
-        background-color: var(--secondarylighter);
-        border: 1px solid var(--primary);
-        border-radius: 5px;
-      }
+    width: 33%;
+
+    &-input {
+      height: 25px;
+      margin: 0 10px 8px 10px;
+      font-family: "Jost", sans-serif;
+      text-align: center;
+      background-color: var(--secondarylighter);
+      border: 1px solid var(--primary);
+      border-radius: 5px;
     }
   }
-  
-  // MODIFIERS DISPLAY FLEX EDIT FORM
-  .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+  &__btn {
+    border: none;
+    color: var(--primary);
+    cursor: pointer;
+    background-color: var(--secondary);
+    font-size: 1.2rem;
   }
-  
-  .col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  // MODIFIERS CATEGORIES EDIT FORM 
-  .--studio {
-    width: 70%;
-  }
-  
-  .--class {
-    width: 70%;
-    margin: 0 auto;
-  }
-  
-  .--time {
-    width: 35%;
-  }
+}
+
+// MODIFIERS DISPLAY FLEX EDIT FORM
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// MODIFIERS CATEGORIES EDIT FORM
+.--studio {
+  width: 70%;
+}
+
+.--class {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.--time {
+  width: 35%;
+}

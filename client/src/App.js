@@ -29,7 +29,6 @@ import Contact from "./components/pages/Contact/Contact";
 
 import Login from "./components/pages/Admin/Login/Login";
 import Dashboard from "./components/pages/Admin/Dashboard/Dashboard";
-import UpdateCollectiveClasses from "./components/pages/Admin/UpdateCollectiveClasses/UpdateCollectiveClasses";
 import UpdateRetreat from "./components/pages/Admin/UpdateRetreat/UpdateRetreat";
 import NotFound from "./components/pages/NotFound/NotFound";
 

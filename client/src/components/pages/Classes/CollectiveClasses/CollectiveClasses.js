@@ -6,8 +6,9 @@ import { GiLotus } from "react-icons/gi";
 import { IoMdTime } from "react-icons/io";
 
 import "./CollectiveClasses.scss";
+import AddCollectiveClass from "../../Admin/UpdateCollectiveClasses/AddCollectiveClass";
 
-function CollectiveClasses(data) {
+function CollectiveClasses({ data, admin }) {
   const days = [
     "Lundi",
     "Mardi",
@@ -17,8 +18,6 @@ function CollectiveClasses(data) {
     "Samedi",
     "Dimanche",
   ];
-
-
 
   return (
     <>
@@ -38,9 +37,8 @@ function CollectiveClasses(data) {
                 <BsPinMapFill className="collective__schedule__icons-item" />
               </div>
 
-              {Object.values(data.data.classes.collective.schedule).map(
-                (day, index) => {
-                  console.log(day);
+              {Object.entries(data.classes.collective.schedule).map(
+                ([key, value], index) => {
                   return (
                     <div
                       key={index}
@@ -51,14 +49,14 @@ function CollectiveClasses(data) {
                       </p>
 
                       <div className="collective__schedule__items">
-                        {day.map((scheduleItem) => {
+                        {value.map((scheduleItem) => {
                           return (
                             <div
-                              key={day.id}
+                              key={value.id}
                               className="collective__schedule__item"
                             >
                               <p className="collective__schedule__item-time">
-                                {scheduleItem.startTime} - {" "}
+                                {scheduleItem.startTime} -{" "}
                                 {scheduleItem.endTime}
                               </p>
 
@@ -77,7 +75,11 @@ function CollectiveClasses(data) {
                           );
                         })}
 
-                        
+                        {admin && (
+                          <div className="collective__schedule__item">
+                            <AddCollectiveClass weekday={key} />
+                          </div>
+                        )}
                       </div>
                     </div>
                   );

@@ -8,8 +8,6 @@ import { MdAddCircle, MdAddCircleOutline } from "react-icons/md";
 import "./AddCollectiveClass.scss";
 
 function AddCollectiveClass({ weekday }) {
-  console.log(weekday);
-
   //STATE
   const [collectiveClassesData, setCollectiveClassesData] = useState({
     startTime: "",
@@ -44,23 +42,29 @@ function AddCollectiveClass({ weekday }) {
     });
   };
 
+  
   // API SETTINGS
   // api params
+  /* https://apsara-yoga.herokuapp.com/ */
   const postData = async (URL) => {
     try {
-      await axios.post(`https://apsara-yoga.herokuapp.com/${URL}`, {
+      console.log("Front - ici l'agrégateur de données pour l'envoi au back")
+      await axios.post(`http://localhost:5000/${URL}`, {
         collectiveClassesData,
       });
     } catch (error) {
       console.log(error);
     }
   };
+
+
   // routes
   useEffect(() => {
+    console.log("Front - J'envoie la data au routeur back")
     if (isSubmit) {
       postData("api/v1/apsara-yoga/post-collective-class");
     }
-  }, []);
+  }, [isSubmit]);
 
   return (
     <>
@@ -124,7 +128,7 @@ function AddCollectiveClass({ weekday }) {
           </div>
         </div>
 
-        <button className="edit-schedule__btn">
+        <button className="edit-schedule__btn" type="submit">
           <MdAddCircleOutline />
         </button>
       </form>

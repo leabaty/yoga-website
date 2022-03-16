@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import useSWR from "swr";
 
 import { BsCalendarWeek, BsPinMapFill } from "react-icons/bs";
 import { GiLotus } from "react-icons/gi";
@@ -8,7 +9,19 @@ import { IoMdTime } from "react-icons/io";
 import "./CollectiveClasses.scss";
 import AddCollectiveClass from "../../Admin/UpdateCollectiveClasses/AddCollectiveClass";
 
-function CollectiveClasses({ data, admin }) {
+function CollectiveClasses({ props, admin }) {
+  // SWR Hooks to conviently fetch the data
+  const fetcher = (...args) => fetch(...args).then((res) => res.json());
+  const { data, error } = useSWR(
+    "http://localhost:5000/api/v1/apsara-yoga/classes",
+    fetcher
+  );
+
+  if (error) return <div>failed to load</div>;
+  if (!data) return <div>loading...</div>;
+
+  /*-----------*/
+
   const days = [
     "Lundi",
     "Mardi",

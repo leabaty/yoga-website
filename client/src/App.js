@@ -73,7 +73,7 @@ function App() {
           <Route path="/admin/tableau-de-bord" element={<Dashboard data={dashboard} />}></Route>
           <Route
             path="/admin/cours-collectifs"
-            element={<CollectiveClasses data={classes} admin={true} />}
+            element={<CollectiveClasses props={classes} admin={true} />}
           ></Route>
           <Route path="/admin/retraite" element={<UpdateRetreat />}></Route>
           <Route path="*" element={<NotFound />}></Route>

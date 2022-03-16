@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import mutate from "swr";
 
 import { BsLaptop } from "react-icons/bs";
 import { FiMapPin } from "react-icons/fi";
@@ -8,6 +9,10 @@ import { MdAddCircle, MdAddCircleOutline } from "react-icons/md";
 import "./AddCollectiveClass.scss";
 
 function AddCollectiveClass({ weekday }) {
+
+  // SWR
+  const fetcher = (...args) => fetch(...args).then((res) => res.json());
+
   //STATE
   const [collectiveClassesData, setCollectiveClassesData] = useState({
     startTime: "",
@@ -42,10 +47,10 @@ function AddCollectiveClass({ weekday }) {
     });
   };
 
-  
   // API SETTINGS
   // api params
   /* https://apsara-yoga.herokuapp.com/ */
+
   const postData = async (URL) => {
     try {
       console.log("Front - ici l'agrégateur de données pour l'envoi au back")
@@ -57,14 +62,31 @@ function AddCollectiveClass({ weekday }) {
     }
   };
 
-
   // routes
   useEffect(() => {
     console.log("Front - J'envoie la data au routeur back")
     if (isSubmit) {
-      postData("api/v1/apsara-yoga/post-collective-class");
+      postData("api/v1/apsara-yoga/classes");
+      // mutate("http://localhost:5000/api/v1/apsara-yoga/classes");
     }
   }, [isSubmit]);
+
+
+  // const postData = async () => {
+  //   console.log("FRONT - j'essaie de poster la data")
+  //   await fetcher("http://localhost:5000/api/v1/apsara-yoga/classes", {
+  //     method: "POST",
+  //     body: JSON.stringify(collectiveClassesData),
+  //   });
+  //   mutate("http://localhost:5000/api/v1/apsara-yoga/classes");
+  // };
+
+  // // routes
+  // useEffect(() => {
+  //   if (isSubmit) {
+  //     postData();
+  //   }
+  // }, [isSubmit]);
 
   return (
     <>
